@@ -1,4 +1,5 @@
 import { WatcherWebsocketServer } from "../watcher/watcher-ws-server";
+import { say } from "./dependency-file";
 
 console.log("starting server");
 
@@ -19,3 +20,5 @@ const content_server = Bun.serve({
 setTimeout(() => {
   console.log("Now? IDK if I like the pause");
 }, 1000);
+
+say();

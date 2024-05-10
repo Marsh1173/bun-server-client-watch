@@ -18,12 +18,18 @@ class WatcherWebsocketClient {
   }
 }
 
+// src/dummy-client/dependency-file copy.ts
+function say2() {
+  console.log("I'm a dependencyyyy number 222222");
+}
+
 // src/dummy-client/dependency-file.ts
 function say() {
-  console.log("I'm a dependency");
+  console.log("I'm a dependencyyyyy");
+  say2();
 }
 
 // src/dummy-client/index.ts
 new WatcherWebsocketClient;
-console.log("HERE in the client. Does this wk?");
+console.log("HERE in the client. Does this work?");
 say();

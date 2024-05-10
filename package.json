@@ -9,7 +9,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "watch": "bun build ./src/dummy-client/index.ts --outfile ./public/bundle.js --watch --target browser",
+    "watch": "bun build ./src/dummy-client/index.ts --outfile ./public/bundle.js --watch",
     "dev-server": "bun run --watch ./src/dummy-server/index.ts"
   }
 }
